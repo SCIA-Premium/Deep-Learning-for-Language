@@ -14,23 +14,31 @@ Because the rarest words and composed words are broken into different subwords, 
 
 ## **When building an encoder-decoder model using an RNN, what is the purpose of adding attention?**
 
-Adding attention allows the model to focus on specific parts of the input when predicting a certain part of the output sequence, enabling easier learning and of higher quality.
-
 ### - What problem are we trying to solve?
 
-
+Attention is supposed to fix to the limitation of the Encoder-Decoder model encoding the input sequence to one fixed length vector from which to decode each output time step. In the RNN the limitation is due to the vanishing/exploding gradient problem. It remembers the parts which it just saw. So, the longer the input sentence, the worse the output.
 
 ### - How does attention solve the problem?
 
-## (2 point) **In a transformer model what is the multihead attention used for?**
+Adding attention allows the model to focus on specific parts of the input when predicting a certain part of the output sequence, enabling easier learning and of higher quality. Attention itself adds 'weight', relative importance, to words in the context vector being created. This allows the RNN to ignore irrelevant information and focus on the most important information when making predictions.
+
+## **In a transformer model what is the multihead attention used for?**
 
 ### - What are we trying to achieve with self-attention?
 
-### - Why do we use muliple head instead of one?
+Self-attention is trying to make sense of the input of the model. The main problem is that when processing a long sequence or multiple sequences the model looses information of relevance of each word. To memorize the whole sequence the self-attention is used.
 
-## (2 point) **In a transformer model, what is the purpose of positional embedding?**
+### - Why do we use multiple head instead of one?
+
+The multihead attention is used to jointly attend to information from different parts of the input. By doing that, we create a more diverse representations which increases the performances of the transformer model.
+
+## **In a transformer model, what is the purpose of positional embedding?**
+
+In a transformer model, positional embedding is used to represent the relative or absolute position of tokens in the sequence. It is impactful because the transformer model is based on self-attention. It allows it to properly learn the relationships between the different positions of words in a sequence.
 
 ### - What would be the problem if we didn't use it?
+
+This is necessary because the transformer model does not have an inherent understanding of the order of the inputs and the meaning of it. Without positional embedding, the model would not be able to correctly learn the relationships between the words and would therefore be less accurate.
 
 ## (2 point) **What are the are the purpose of benchmarks?**
 
