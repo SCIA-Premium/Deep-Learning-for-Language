@@ -39,6 +39,16 @@ comments to  describe our technical choices, and analyse our results.
 
 ## 1_Encoder_Decoder
 
+In this lab, we had to implement a pretty decent **machine translation model** from German to English. This using the transformer by following a Pytorch tutorial.
+
+To use the transformer, we had to implement some **decoding functions** to decode the output of the transformer.
+The tutorial uses a **greedy** approach at decoding. We implemented some variations of this greedy approach, such as **beam search** and **top-k sampling**, with a *temperature* parameter.
+
+The **PyTorch tutorial** helped us a lot to implement the translation model and give a first approach to the transformer. We also learned a lot about the transformer and its architecture.
+
+To compare the decoding function we implemented, we used the **BLEU score**. This score is a metric to evaluate the quality of a translation. The higher the score, the better the translation is. We saw
+that the parameters of the decoding function have a big impact on the BLEU score. The top-k sampling with a low temperature and a medium k value (like 3) gave the best results. 
+
 ---
 
 ## 2_HuggingFace
