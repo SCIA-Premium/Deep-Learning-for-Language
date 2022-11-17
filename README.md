@@ -41,7 +41,7 @@ Each notebook of the labs contains the work done during the lab, with some comme
 
 ## 2_HuggingFace
 
-In this section we had touUse the **HuggingFace transformer library** to fine-tune a model on the IMDB library dataset and then evaluate it on the test set.
+In this section we had to use the **HuggingFace transformer library** to fine-tune a model on the IMDB library dataset and then evaluate it on the test set.
 
 The **HuggingFace transformers course** helped us a lot to go step by step through the process of fine-tuning a model. First we had to load the **imdb** dataset, then we had to instantiate a tokenizer to preprocess it, then we had to create a model and train it with a trainer. 
 
