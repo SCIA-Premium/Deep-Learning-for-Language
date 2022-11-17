@@ -15,6 +15,26 @@ The teacher github repository can be found [here](https://github.com/mvonwyl/epi
 
 ---
 
+## Architecture
+
+Our repository for the project has the following architecture:
+
+```
+* 1_Encoder_Decoder : Contains the subject and the notebook for our first lab on the Pytorch tutorial and decoding functions.
+
+* 2_HuggingFace : Contains the subject and the notebook for our second lab on the HuggingFace models.
+
+* 3_Semantic_Search : Contains the subject and the notebook for our third lab.
+
+* 4_Project : Contains the subject and the notebook for our project.
+
+* README.md
+```
+
+Each notebook of the labs contains the work done during the lab, with some comments to  describe our technical choices, and analyse our results.
+
+---
+
 ## 1_Encoder_Decoder
 
 ## 2_HuggingFace
