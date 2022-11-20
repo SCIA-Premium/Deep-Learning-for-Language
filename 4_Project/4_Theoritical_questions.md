@@ -42,7 +42,11 @@ This is necessary because the transformer model does not have an inherent unders
 
 ## (2 point) **What are the are the purpose of benchmarks?**
 
+The purpose of benchmarks is to compare the efficiency of the different models with the same dataset. It is a point of reference, a way of measuring progress in a domain.
+
 ### - And are they reliable? Why?
+
+There is no overall reliable benchmark. Each one shows a different aspect of the performances of the model used. And they must be updated very frequently to be accurate.
 
 ## (4 points) **What are the differences between BERT and GPT?**
 
